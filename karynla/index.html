@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>karynla</title>
+    <link rel="icon" type="image/x-icon" href="..//karynla/assets/images/title-img.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="..//karynla/assets/css/boostrap.min.css">
+    <link rel="stylesheet" href="..//karynla/assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="..//karynla/assets/css/slick.css">
+    <link rel="stylesheet" href="..//karynla/assets/css/style.css">
+    <link rel="stylesheet" href="..//karynla/assets/css/media_query.css">
+</head>
+
+<body>
+    <!--  Preloader  -->
+    <div class="wrapper">
+        <div id="loader-wrapper">
+            <div id="loader">
+                <svg viewBox="0 0 1320 300">
+                    <text x="50%" y="50%" dy=".35em" text-anchor="middle"> karyn </text>
+                </svg>
+            </div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+    </div>
+    <!--  Preloader End  -->
+    <!--  Background Animation  -->
+    <div id="particles-js"></div>
+    <!--  Background Animation End  -->
+    <!--  Cursor  -->
+    <div class="cursor"></div>
+    <!--  Cursor End  -->
+    <!--  Dark Light Mode  -->
+    <div class="dark_toggle">
+        <div class="ul-header">
+            <a class="mode" onclick="myFunction()" title="Toggle Mode">
+                <div class="icon-container">
+                    <i id="sunIcon" class="fa-solid fa-sun fa-spin icon"></i>
+                    <i id="moonIcon" class="fa-solid fa-moon icon hidden"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!--  Dark Light Mode End -->
+    <header>
+        <!--  Fix Icon Menu  -->
+        <div class="sidebar close">
+            <ul class="nav-links icetab-container" id="icetab-container">
+                <li class="icetab current-tab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../karynla/assets/images/home_icon.svg" alt="home_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li class=""><a class="link_name" href="javascript:void(0)">Home</a></li>
+                    </ul>
+                </li>
+                <li class="icetab menu-btn">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../karynla/assets/images/about_icon.svg" alt="about_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">Sobre mim</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../karynla/assets/images/resume_icon.svg" alt="resume_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">Resumo</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../karynla/assets/images/services_icon.svg" alt="services_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">Serviços</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../karynla/assets/images/skills_icon.svg" alt="skills_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Skills</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../karynla/assets/images/portfolio_icon.svg" alt="portfolio_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Portfolio</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../karynla/assets/images/contact_icon.svg" alt="contact_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Contato</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--  Fix Icon Menu End  -->
+        <!--  Side Menu  -->
+        <div class="toggle" onclick="openNav()">
+            <img class="line-menu" src="../karynla/assets/images/line-menu.png" alt="line-menu">
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="closebtn" onclick="closeNav()">&times;</div>
+            <img class="logo" src="../karynla/assets/images/logo.png" alt="logo">
+            <ul class="sidescreen_sub icetab-container" id="icetab-container2">
+                <li class="icetab current-tab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../karynla/assets/images/home_icon.svg" alt="home_icon">Home
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../karynla/assets/images/about_icon.svg"
+                            alt="about_icon">Sobre mim
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../karynla/assets/images/resume_icon.svg"
+                            alt="resume_icon">Resumo
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../karynla/assets/images/services_icon.svg"
+                            alt="services_icon.svg">Serviços
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../karynla/assets/images/skills_icon.svg"
+                            alt="skills_icon">Skills
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../karynla/assets/images/portfolio_icon.svg"
+                            alt="portfolio_icon">Portfolio
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../karynla/assets/images/contact_icon.svg"
+                            alt="contact_icon">Contato
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--  Side Menu End  -->
+    </header>
+    <div class="all_page" id="page">
+        <section class="card_section" id="card_main">
+            <div class="karyn_bio">
+                <div class="bio_contain">
+                    <h2 class="designer font_w_font_s1 overflow-hidden"></h2>
+                </div>
+            </div>
+            <div class="right_card_main icetab-content" id="icetab-content">
+                <!--  Home Section  -->
+                <section class="karyn-intro tabcontent tab-active" id="home">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">intro</h2>
+                    </div>
+                    <h2 class="ka-alves font_w_font_s fade_up">Olá, me chamo Karyn Laís, Bibliotecária e Desenvolvedora
+
+
+                    </h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Sou uma estudante dedicada de engenharia de software, com uma paixão adicional pelo desenvolvimento web e Front-end. Meu percurso acadêmico me proporcionou uma compreensão aprofundada sobre a importância da organização da documentação no fluxo informacional.
+                    </h3>
+                    <div class="button_circle_group">
+                        <div>
+                            <button class="download_cv font_w_font_s"
+                                onClick="window.open('../karynla/assets/pdf/karyn_resume.pdf');">
+                                <i class="ri-download-cloud-2-line"></i>Download CV
+                            </button>
+                        </div>
+                        <div class="circular_text_main ">
+                            <a href="javascript:void(0)" class="down_arrow_main position-relative">
+                                <img class="circular_text" src="../karynla/assets/images/circular_text.png" alt="circular_text">
+                                <img class="down_arrow" src="../karynla/assets/images/down_arrow.svg" alt="down_arrow">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Sobre Section  -->
+                <section class="karyn-intro tabcontent" id="about">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">sobre mim</h2>
+                    </div>
+                    <h2 class="ka-alves font_w_font_s fade_up">Trajetória e mudança de área</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Além da engenharia de software, trago uma valiosa experiência como bibliotecário, onde desenvolvi habilidades sólidas em gestão, análise e disseminação efetiva da informação. Minha expertise abrange o tratamento, organização e recuperação documental, contribuindo para a eficiência no acesso ao conhecimento.
+                        <br>
+                        Enriqueci minha jornada acadêmica com um intercâmbio de seis meses no curso de Engenharia Informática em Covilhã, Portugal. Essa experiência internacional ampliou meu horizonte, proporcionando uma perspectiva global no campo da tecnologia.
+                    </h3>
+                    <div class="about_counter fade_up">
+                        <div class="counter">
+                            <h3 class="counter2 count font_w_font_s" data-count="5">10+</h3>
+                            <h3 class="experince font_w_font_s1 ">ANOS EM GESTÃO DA INFORMAÇÃO</h3>
+                        </div>
+                        <div class="counter">
+                            <h3 class="counter2 count font_w_font_s" data-count="160">2+</h3>
+                            <h3 class="experince">ANOS DE IMERSÃO NA ÁREA DE TECNOLOGIA E DESENVOLVIMENTO</h3>
+                        </div>
+                    </div>
+                </section>
+                <!--  Resumo Section  -->
+                <section class="karyn-intro tabcontent" id="resume">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">resumo</h2>
+                    </div>
+                    <h2 class="ka-alves font_w_font_s fade_up">Educação</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Essa trajetória educacional diversificada destaca minha busca constante por conhecimento e aprimoramento. Desde a base sólida em Biblioteconomia até a imersão nas áreas de Engenharia de Software e Tecnologia da Informação, minha formação abrange uma ampla gama de disciplinas. Os cursos adicionais na Alura e a pós-graduação em Projetos para Startups demonstram meu comprometimento em manter-me atualizada e preparada para enfrentar os desafios dinâmicos do mundo tecnológico.
+                    </h3>
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <h3 class="bachelor font_w_font_s1">Bacharelado - Biblioteconomia</h3>
+                            <h4 class="university font_w_font_s1">UFSC Universidade Federal de Santa Catarina / 2013 - 2018
+                            </h4>
+                            <h5 class="cursus font_w_font_s1">Formação abrangente em gestão da informação, preparando-me para analisar, organizar e disseminar eficientemente documentos. Adquiri habilidades essenciais em indexação, pesquisa e tratamento documental, consolidando uma base sólida para minha atuação subsequente em diversas áreas, incluindo a bibliotecária e analista de documentação.
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <h3 class="bachelor font_w_font_s1">Pós-graduação - MBA - Projetos para Startups</h3>
+                            <h4 class="university font_w_font_s1">Faculdade Descomplica / 2020 - 2022</h4>
+                            <h5 class="cursus font_w_font_s1">Desenvolvi habilidades em gestão de projetos, elaboração de relatórios e análise documental, preparando-me para enfrentar os desafios e demandas únicas em setores de inovação.
+                            Essa formação complementar fortaleceu minha capacidade de contribuir efetivamente para o sucesso e crescimento de empreendimentos emergentes.
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="education position-relative">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <h3 class="bachelor font_w_font_s1">Bacharelado - Engenharia de Software</h3>
+                            <h4 class="university font_w_font_s1">UNINTER Centro Universitário Internacional
+                            / 2022 - 2026/<h4>
+                            <h5 class="cursus font_w_font_s1">Formação técnica e prática nas áreas fundamentais do desenvolvimento de software. Desde julho de 2022, tenho aprimorado habilidades em uma vasta gama de linguagens. Esta formação tem contribuído significativamente para minha capacidade de criar soluções inovadoras e enfrentar desafios complexos no campo da tecnologia da informação.</h5>
+                        </div>
+                        
+                    </div>
+                    <h2 class="ka-alves experience_main_text font_w_font_s fade_up">Experiência</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Ao longo dos anos, desenvolvi habilidades sólidas em gestão e análise da informação, tratamento documental, e organização eficiente de bases de dados. Minha atuação como preposta de projeto em uma empresa de energia privada destaca minha capacidade de liderança e gerenciamento de projetos. Essa trajetória profissional reflete meu compromisso contínuo com a qualidade na manipulação e disseminação de informações, preparando-me para desafios mais complexos na área.
+                    </h3>
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <div class="envato_group_main">
+                                <div>
+                                    <h3 class="bachelor font_w_font_s1">Arquivista / Bibliotecária
+                                    </h3>
+                                    <h4 class="company font_w_font_s1">Acervo / 2022 - 2021</h4>
+                                </div>
+                            </div>
+                            <h5 class="cursus font_w_font_s1">Elaboração de relatórios. Gestão de projetos. Tratamento, organização e disseminação da informação. Análise documental, digitação e indexação na base de dados.
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <div class="envato_group_main">
+                                <div>
+                                    <h3 class="bachelor font_w_font_s1">Analista de Documentação
+                                    </h3>
+                                    <h4 class="company font_w_font_s1">ENGIE | Acervo / 2021 - 2014</h4>
+                                </div>
+                            </div>
+                            <h5 class="cursus font_w_font_s1">
+                                Análise do conteúdo informacional e indexação na base de dados. Pesquisa, análise e extração de dados. Tratamento, organização e disseminação da informação. Preposta de projeto em arquivo de empresa de energia privada.
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="education position-relative">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <div class="envato_group_main">
+                                <div>
+                                    <h3 class="bachelor font_w_font_s1">Auxiliar de Processamento de Dados
+                                    </h3>
+                                    <h4 class="company font_w_font_s1">ENGIE | Acervo / 2011 - 2013</h4>
+                                </div>
+                            </div>
+                            <h5 class="cursus font_w_font_s1">Organização, preparação e destinação documental. Arquivo de documentação contábil.
+                            </h5>
+                        </div>
+                    </div>
+                </section>
+                <!--  Servicos Section  -->
+                <section class="karyn-intro tabcontent" id="services">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">serviços</h2>
+                    </div>
+                    <h2 class="ka-alves font_w_font_s fade_up">Desenvolvimento, gestão e fluxo informacional</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Com uma abordagem integrada combinando conhecimentos técnicos com uma compreensão da gestão de informação, posso te ajudar a criar produtos digitais que não apenas atendem às expectativas técnicas, mas também promovem uma eficaz disseminação de conhecimento.
+                    </h3>
+                    <div class="services_box_main">
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="../karynla/assets/images/ux.png" alt="ux">
+                            <h3 class="ui_ux font_w_font_s">Gestão da Informação</h3>
+                            <h4 class="ui_sub_text font_w_font_s1">Organização, tratamento documental, indexação e disseminação da informação.
+                            </h4>
+                        </div>
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="../karynla/assets/images/web.png" alt="web">
+                            <h3 class="ui_ux font_w_font_s">Desenvolvimento Web e Mobile</h3>
+                            <h4 class="ui_sub_text font_w_font_s1">Criação de soluções inovadoras e responsivas para diversas plataformas.
+                            </h4>
+                        </div>
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="../karynla/assets/images/marketing.png" alt="projetos">
+                            <h3 class="ui_ux font_w_font_s">Gestão de Projetos</h3>
+                            <h4 class="ui_sub_text font_w_font_s1">Elaboração de relatórios, análise documental e gestão de projetos para empresas.
+                            </h4>
+                        </div>
+                    </div>
+
+                </section>
+                <!--  Skills Section  -->
+                <section class="karyn-intro tabcontent" id="skill">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">skills</h2>
+                    </div>
+                    <h2 class="ka-alves font_w_font_s fade_up">Aprendizagem contínua</h2>
+                    <h3 class="passionate font_w_font_s1 ">Sigo minha jornada com curiosidade, aplicando um conjunto diversificado de habilidades para enfrentar os desafios no campo da tecnologia e desenvolvimento.
+                    </h3>
+                    <h3 class="lan_skill font_w_font_s fade_up">Language Skills</h3>
+                    <div class="skill_circle_main">
+                        <div>
+                            <div class="circlechart" data-percentage="90"></div>
+                            <h2 class="subject">Português</h2>
+                        </div>
+                        <div>
+                            <div class="circlechart" data-percentage="70"></div>
+                            <h2 class="subject">Inglês</h2>
+                        </div>
+                        <div>
+                            <div class="circlechart" data-percentage="40"></div>
+                            <h2 class="subject">Espanhol</h2>
+                        </div>
+                        <div>
+                            <div class="circlechart" data-percentage="20"></div>
+                            <h2 class="subject">Francês</h2>
+                        </div>
+                    </div>
+                    <h3 class="lan_skill hard_skill font_w_font_s fade_up">Hard Skills</h3>
+                    <div class="skill_circle_main">
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../karynla/assets/images/html-.png" alt="html">
+                                <h4 class="hard_skill_counter font_w_font_s1">85%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">HTML</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../karynla/assets/images/css-.png" alt="css">
+                                <h4 class="hard_skill_counter font_w_font_s1">85%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">CSS</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="flutter" src="../karynla/assets/images/js-.png" alt="javascript">
+                                <h4 class="hard_skill_counter font_w_font_s1">67%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">JavaScript</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="flutter" src="../karynla/assets/images/flutter.png" alt="flutter">
+                                <h4 class="hard_skill_counter font_w_font_s1">65%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">Flutter</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../karynla/assets/images/python.png" alt="python">
+                                <h4 class="hard_skill_counter font_w_font_s1">55%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">Python</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../karynla/assets/images/figma.png" alt="html">
+                                <h4 class="hard_skill_counter font_w_font_s1">75%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">Figma</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../karynla/assets/images/wordpress.png" alt="wordpress">
+                                <h4 class="hard_skill_counter font_w_font_s1">75%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">WordPress</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../karynla/assets/images/wix.png" alt="wix">
+                                <h4 class="hard_skill_counter font_w_font_s1">85%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">Wix</h4>
+                        </div>
+                    </div>
+                </section>
+                <!--  Portfolio Section   -->
+                <section class="karyn-intro tabcontent" id="portfolio">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">portfolio</h2>
+                    </div>
+                    <h2 class="ka-alves font_w_font_s fade_up">Projetos Web</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Projetos com código nativo e plataformas populares como WordPress e Wix, adaptando às necessidades específicas e proporcionando soluções web eficientes.
+                    </h3>
+                    <div class="content_main">
+                        <div class="content_main1">
+                            <div class="fade_up">
+                                <a href="https://karynla.github.io/Adopet/Inicial"><div class="content_portfolio pop-up">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="../karynla/assets/images/adopet.jpg" alt="adopet"></a>
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">Adopet</h3>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">Adopet</h4>
+                                <p class="project_name_sub font_w_font_s1">Adoção de pets. Projeto mobile fist, formularios e validação de informação em JavaScript.</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio">
+                                    <a href="https://moodlab.com.br">
+                                        <div class="content-overlay"></div>
+                                        <img class="content-image" src="../karynla/assets/images/mood.jpg" alt="moodlab">
+                                        <div class="content-details fadeIn-bottom">
+                                            <h3 class="content-title">MOOD Lab Design</h3>
+                                            <p class="content-text"></p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <h4 class="project_name font_w_font_s">MOOD Lab Design</h4>
+                                <p class="project_name_sub font_w_font_s1">Site institucional, implementado integralmente através da plataforma WordPress.</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio pop-up">
+                                    <a href="https://karynla.github.io/AluraBooks/">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="../karynla/assets/images/alurabooks.jpg" alt="alurabooks">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">AluraBooks</h3>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </a>
+                                </div>
+                                <h4 class="project_name font_w_font_s">AluraBooks</h4>
+                                <p class="project_name_sub font_w_font_s1">Livros sobre programação e tecnologia. Projeto mobile fist, feito do zero e responsivo (mobile, tablet e desktop).</p>
+                            </div>
+                        </div>
+                        <div class="content_main2">
+                            <div class="fade_up">
+                                <div class="content_portfolio">
+                                    <a href="https://www.welinkyou.com.br">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="../karynla/assets/images/welink.jpg"
+                                        alt="crypto_app_img">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">WeLink Metaverso</h3>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </a>
+                                </div>
+                                <h4 class="project_name font_w_font_s">WeLink</h4>
+                                <p class="project_name_sub font_w_font_s1">Site institucional desenvolvido em Wix, contendo páginas e subpáginas dinámicas.</p>
+                            </div>
+                            <div class="">
+                                <a href="https://karynla.github.io/Portfolio/home">
+                                    <div class="content_portfolio">
+                                        <div class="content-overlay"></div>
+                                        <img class="content-image" src="../karynla/assets/images/karyn-pot.jpg"
+                                            alt="portfolio">
+                                        <div class="content-details fadeIn-bottom">
+                                            <h3 class="content-title">Primeiro Portfólio</h3>
+                                            <p class="content-text"></p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <h4 class="project_name font_w_font_s">Portifólio profissional</h4>
+                                <p class="project_name_sub font_w_font_s1">Feito inteiramente com cógigo nativo HTML e CSS. Página principal e de certificações.</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio pop-up">
+                                    <a href="https://karynla.github.io/AluraPlus/">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="../karynla/assets/images/aluraplus.jpg" alt="aluraplus">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">AluraPlus</h3>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </a>
+                                </div>
+                                <h4 class="project_name font_w_font_s">AluraPlus</h4>
+                                <p class="project_name_sub font_w_font_s1">Alura Plus Informações sobre cursos Alura. Aprofundando conhecimento, site responsivo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--  Portfolio Section End   -->
+                <!--  Contato Section   -->
+                <section class="karyn-intro tabcontent" id="contact">
+                    <div class="intro_main">
+                        <h2 class="intro fade_up">Fale comigo</h2>
+                    </div>
+                    <h2 class="ka-alves fade_up">Vamos trabalhar juntos!</h2>
+                    <div class="container1">
+                        <div class="form form__1">
+                            <label for="name" class="form__label">Digite Seu Nome*</label>
+                            <input type="text" class="form__input" placeholder="" id="name" required autocomplete="off">
+                        </div>
+                        <div class="form form__2">
+                            <label for="email" class="form__label">Seu Email*</label>
+                            <input type="email" class="form__input" placeholder="" id="email" required
+                                autocomplete="off">
+                        </div>
+                        <div class="form form__1">
+                            <label for="name" class="form__label">Seu Número de Telefone*</label>
+                            <input type="text" class="form__input" placeholder="" id="phone" required
+                                autocomplete="off">
+                        </div>
+                        <div class="form form__1">
+                            <label for="name" class="form__label">Assunto*</label>
+                            <input type="text" class="form__input" placeholder="" id="subject" required
+                                autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="btn_message">
+                        <div class="form form__3">
+                            <label for="name" class="form__label">Me conte sobre o projeto*</label>
+                            <input type="text" class="form__input message2" placeholder="" id="project" required>
+                        </div>
+                        <div class="send_message_form">
+                            <button class="download_cv form__btn">
+                                <i class="fa-regular fa-paper-plane material-icons"></i>Enviar
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="ka-alves touch">Entre em contato!</h3>
+                        <div class="contact_number_main">
+                            <h4 class="contact_number"><a href="tel:+55999489410">+55 99948 9410</a></h4>
+                        </div>
+                        <div class="contact_number_main">
+                            <h4 class="contact_number"><a href="mailto:karynlais@hotmail.com">karynlais@hotmail.com</a></h4>
+                        </div>
+                        <div class="contact_number_main">
+                            <h4 class="contact_number">
+                                <a href="javascript:void;">Florianópolis, Santa Catarina, Brasil</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.7197728253127!2d-48.51169032419983!3d-27.571206121039435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9527388dfd6f5631%3A0x219b85f338e48eba!2sCELTA!5e0!3m2!1spt-BR!2spt!4v1706806722024!5m2!1spt-BR!2spt" 
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+                <!--  Contact Section End  -->
+            </div>
+        </section>
+        <!--  Social Media Right Side   -->
+        <div class="social_media_main" id="social_media_main">
+            <ul class="social_media">
+                <li><a href="https://www.linkedin.com/in/karynla/" target="blank">IN</a></li>
+                <li><a href="https://github.com/karynla" target="blank">GH</a></li>
+                <li><a href="https://wa.me/554899489410" target="blank">WA</a></li>
+                <li><a href="https://www.instagram.com/karynla/?next=%2F" target="blank">IG</a></li>
+            </ul>
+        </div>
+        <!--  Social Media Right Side End  -->
+    </div>
+    <script src="../karynla/assets/javascript/jquery.min.js"></script>
+    <script src="../karynla/assets/javascript/magnific-popup.min.js"></script>
+    <script src="../karynla/assets/javascript/progresscircle.js"></script>
+    <script src="../karynla/assets/javascript/cursor.js"></script>
+    <script src="../karynla/assets/javascript/bootstrap.bundle.min.js"></script>
+    <script src="../karynla/assets/javascript/slick.min.js"></script>
+    <script src="../karynla/assets/javascript/hexagon_animation/particles.min.js"></script>
+    <script src="../karynla/assets/javascript/spider_animation/spider_animation.js"></script>
+    <script src="../karynla/assets/javascript/script.js"></script>
+</body>
+
+</html>
