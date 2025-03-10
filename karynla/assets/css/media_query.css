@@ -757,8 +757,9 @@
     }
 
     .designer {
-        margin-bottom: 10px;
+        margin: 10px;
         height: 20px;
+        width: 100%;
         font-size: 16px;
     }
 
@@ -791,6 +792,12 @@
 @media(max-width:500px) {
     .view_project {
         width: 80%;
+    }
+
+    .ka-alves {
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
     }
 
     .ul-header a {

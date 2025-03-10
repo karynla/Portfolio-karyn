@@ -985,6 +985,7 @@ button:hover {
     position: relative;
     transform: translateX(-22px);
     overflow: hidden;
+    
 }
 
 .tabcontent {
@@ -1850,6 +1851,11 @@ button:hover .shopping_bag {
 .contact_number a:hover {
     color: #A09D52;
 }
+
+#contact {
+    height: auto;
+}
+
 
 iframe {
     margin: 30px 0;
